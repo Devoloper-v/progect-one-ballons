@@ -1,0 +1,76 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: $color-gray;
+    font-size: $font-size-paragraph;
+    letter-spacing: .2rem;
+}
+.title-first {
+    color: $color-white;
+    font-family: "Lato";
+    &__main {
+        display: block;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 6rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        animation-name:  LeftToRight;
+        animation-duration: 1.5s;
+        animation-delay: 50ms;
+        animation-timing-function: ease;
+        backface-visibility: hidden;
+    }
+    &__secondary {
+        display: block;
+        font-weight: 100;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        letter-spacing: .5rem;
+        animation-name:  RightToLeft ;
+        animation-duration: 2s;
+        animation-delay: 50ms;
+        animation-timing-function: ease;
+        backface-visibility: hidden;
+        margin-bottom: 6.5rem;
+    }
+}
+
+.title-secondary{
+    //my idia
+    padding-right: 7rem;
+    padding-left: 7rem;
+    
+    text-align: center;
+    display: inline-block;
+    font-size: $font-size-h2;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(90deg, rgba($color-brown-light,0.7) 0.03%, rgba($color-brown-dark,0.7)99.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .4s;
+    backface-visibility: hidden;
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0rem .4rem .4rem rgba($color-black, .25);
+    }
+    &__white{
+        color: $color-white;
+    }
+}
+
+.title-third{
+    font-size: $font-size-h3;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: $font-size-paragraph;
+    letter-spacing: .2rem;
+    font-weight: 400;
+}

@@ -1,0 +1,45 @@
+//Перемение
+$color-gray:gray ;
+$color-brown-light:#BA8554 ;
+$color-brown-dark:#A14F03 ;
+$color-black:black ;
+$color-white:#ffffff;
+
+
+$box-shadow: (0px .4rem .4rem rgba(0,0,0,0.3));
+$shadow-h2:0rem .4rem .4rem rgba($color-black, .25); 
+
+$margin-vertical-big:8rem;
+$grid-width:114rem;
+$gutter-horizontal:6rem;
+
+$font-size-paragraph: 1.6rem;
+$font-size-h2: 3.6rem;
+$font-size-h3: 2rem;
+
+//@import "abstract/_variable.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_functions.scss";
+
+@import "base/_animation.scss";
+@import "base/_base.scss";
+@import "base/tupography.scss";
+@import "base/utillities.scss";
+
+@import "components/composition.scss";
+@import "components/button-text.scss";
+@import "components/button.scss";
+@import "components/adventure-card.scss";
+@import "components/tour-card.scss";
+@import "components/_feedBack.scss";
+@import "components/_bg-video.scss";
+@import "components/_form.scss";
+
+
+@import "layout/header.scss";
+@import "layout/grid.scss";
+@import "layout/footer.scss";
+@import "layout/navigation.scss";
+
+@import "pages/home.scss";
+
